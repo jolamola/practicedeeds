@@ -1,0 +1,18 @@
+<h1> new deed </h1>
+
+<%= form_for @deed, url: user_deeds_path do |f| %>
+	Deed: <%= f.text_field :deed %>
+	Referral user: <%= f.number_field :from_id %>
+	<%= f.number_field :to_id %>
+
+
+	<%= f.submit %>
+<% end %>
+
+
+
+www.oursebsite.com/qwerty
+
+qwerty -> from_id
+
+from_id -> gets saved in deed.from_id
